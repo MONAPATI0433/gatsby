@@ -1,0 +1,35 @@
+    .carousel-caption{
+        position: absolute;
+        
+    }
+    .carousel-caption{
+        margin-top:-50px;
+    }
+
+    .carousel-caption h1 {
+        position: relative;
+        top: -150px;
+    }
+    .carousel-caption span {
+        position: relative;
+        top: -150px;
+        left: 25px;
+    } 
+    .carousel-caption p{
+        position: relative;
+        top: -150px;
+        left: 25px;
+    }
+    .carousel-caption button {
+        position: relative;
+        top: -100px;
+        left: -175px;
+    } 
+
+    .breadcrumb {
+        margin-top: 100px;
+        width:103%;
+        height: 50px;
+        margin-left: -20px;
+        margin-bottom: -1px;
+    }
