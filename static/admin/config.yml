@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: MONAPATI0433
+  repo: gatsby
 
 media_folder: static/assets
 public_folder: assets

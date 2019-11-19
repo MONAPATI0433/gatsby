@@ -1,13 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+import Head from '../components/head'
 import './index.css'
-
+import bg from '../images/nature.jpg'
+import { Row, Card, Col, Button, Container,} from 'react-bootstrap'
 const IndexPage = () => (
   <Layout>
+    <Head />
     <SEO title="Home" />
     {/* <h1>Hi </h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -15,6 +18,42 @@ const IndexPage = () => (
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div> */}
     {/* <Link to="/page-2/">Go to page 2</Link> */}
+    <Container>
+      <Row>
+        <Col md={4}>
+         
+            <Card.Body>
+            
+              <Card.Text>
+              <img src={bg} className="d-block w-100 h-200" alt="hello" style={{ height: "200px" }} />
+    </Card.Text>
+              <Button variant="primary" size="sm" style={{position:'absolute', top:'150px',left:'120px'}}>Read More...</Button>
+            </Card.Body>
+         
+        </Col>
+        <Col md={4}>
+         
+            <Card.Body>
+            
+              <Card.Text>
+              <img src={bg} className="d-block w-100 h-200" alt="hello" style={{ height: "200px" }} />
+    </Card.Text>
+              <Button variant="primary" size="sm" style={{position:'absolute', top:'150px',left:'120px'}}>Read More...</Button>
+            </Card.Body>
+         
+        </Col>
+        <Col md={4}>
+         
+            <Card.Body>
+              <Card.Text>
+              <img src={bg} className="d-block w-100 h-200" alt="hello" style={{ height: "200px" }} />
+    </Card.Text>
+              <Button variant="primary" size="sm" style={{position:'absolute', top:'150px',left:'120px'}}>Read More...</Button>
+            </Card.Body>
+          
+        </Col>
+      </Row>
+    </Container>
     <div className="container">
       <div className="col-12 mt-4">
         <div className="row">
@@ -28,7 +67,7 @@ const IndexPage = () => (
         <div className="row">
           <h4 className="">AIQRATIONS</h4>
         </div>
-        <hr style={{marginTop:"-20px"}}></hr>
+        <hr style={{ marginTop: "-20px" }}></hr>
       </div>
     </div>
   </Layout>
